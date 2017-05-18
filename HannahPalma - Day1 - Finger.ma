@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma - Day1 - Finger.ma
-//Last modified: Wed, May 17, 2017 07:48:55 PM
+//Last modified: Wed, May 17, 2017 07:53:03 PM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "72937497-7F46-88B4-0674-2D981002AC74";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.882985162366886 4.6830406371504729 2.5249032076502615 ;
-	setAttr ".r" -type "double3" -21.938352728748672 280.2000000000512 -2.69409550114916e-14 ;
+	setAttr ".t" -type "double3" -1.2314341084801956 6.2126551426103287 10.905992333815695 ;
+	setAttr ".r" -type "double3" -29.13835272911863 -6.600000000022451 6.0033254728299193e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "341DDA4C-5A49-FC11-1EDA-B2896DD411E6";
 	setAttr -k off ".v" no;
@@ -84,20 +84,33 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.625 0.125 ;
+	setAttr ".pv" -type "double2" 0.72500002384185791 0.44750002026557922 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 7 ".pt";
+	setAttr -s 26 ".pt";
 	setAttr ".pt[0]" -type "float3" 0.080932647 0.06800127 0 ;
 	setAttr ".pt[1]" -type "float3" -0.082090057 0.043323204 0 ;
 	setAttr ".pt[2]" -type "float3" 0.093057692 -0.034239069 2.220446e-16 ;
 	setAttr ".pt[3]" -type "float3" -0.087175503 -0.034305014 0 ;
+	setAttr ".pt[6]" -type "float3" 0 -0.058125798 0 ;
+	setAttr ".pt[7]" -type "float3" 0 -0.058125798 0 ;
 	setAttr ".pt[8]" -type "float3" 0.12011702 0 0 ;
 	setAttr ".pt[9]" -type "float3" -0.1160996 0 0 ;
+	setAttr ".pt[13]" -type "float3" 0 -0.058125798 0 ;
 	setAttr ".pt[16]" -type "float3" 0 -0.034058623 0 ;
+	setAttr ".pt[32]" -type "float3" -0.049437564 0 0 ;
+	setAttr ".pt[34]" -type "float3" 0.044601217 0 0 ;
+	setAttr ".pt[36]" -type "float3" 0.044601217 0.022513432 0 ;
+	setAttr ".pt[37]" -type "float3" 0 0.022513432 0 ;
+	setAttr ".pt[38]" -type "float3" -0.049437556 0.022513432 0 ;
+	setAttr ".pt[40]" -type "float3" 0 0.022895902 0 ;
+	setAttr ".pt[41]" -type "float3" -0.049437556 0.022895902 0 ;
+	setAttr ".pt[43]" -type "float3" -0.049437564 0 0 ;
+	setAttr ".pt[45]" -type "float3" 0.044601217 0 0 ;
+	setAttr ".pt[47]" -type "float3" 0.044601217 0.022895902 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "BBE9F447-F04F-010C-710C-BBAF9992269A";
