@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma - Day2 - hand.ma
-//Last modified: Wed, May 24, 2017 08:16:50 PM
+//Last modified: Wed, May 24, 2017 08:18:48 PM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "72937497-7F46-88B4-0674-2D981002AC74";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -38.114406045232982 40.79392423031392 -5.9856829324601408 ;
-	setAttr ".r" -type "double3" -47.738352735676322 2060.5999999981032 -2.5444437451708134e-14 ;
+	setAttr ".t" -type "double3" -26.727467860518132 31.769490395192094 -18.217472181388541 ;
+	setAttr ".r" -type "double3" -45.938352735271309 2035.7999999979556 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "341DDA4C-5A49-FC11-1EDA-B2896DD411E6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 58.55278838304222;
+	setAttr ".coi" 47.745311846479474;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -218,7 +218,7 @@ createNode transform -n "pasted__group" -p "group5";
 	setAttr ".sp" -type "double3" 7.9808054015518213 -0.11203466848595389 5.1043503118720155 ;
 createNode transform -n "pasted__pasted__pCube1" -p "|group5|pasted__group";
 	rename -uid "94301355-8647-4740-3F2A-009F26FEE2E9";
-	setAttr ".t" -type "double3" 7.1813357910091291 0 0.96358080299660465 ;
+	setAttr ".t" -type "double3" 7.2874791037048769 -0.063632310991792451 0.71274060335774614 ;
 	setAttr ".r" -type "double3" 3.1855747234074889 -31.436402539371961 -1.638991232287244 ;
 	setAttr ".s" -type "double3" 1.4419779146624088 1.1704216263516538 8.1343073589312365 ;
 	setAttr ".rp" -type "double3" 0 0 -5.1051681979320298 ;
@@ -5125,6 +5125,9 @@ createNode polySplit -n "polySplit10";
 		-2147482630 -2147483416 -2147482632 -2147482633 -2147483404 -2147482635 -2147482636 -2147483347 -2147483428;
 	setAttr ".sma" 180;
 	setAttr ".m2015" yes;
+createNode deleteComponent -n "deleteComponent19";
+	rename -uid "8BB2352A-794A-6E1F-EAF4-ED8396E1961E";
+	setAttr ".dc" -type "componentList" 3 "f[105]" "f[141]" "f[552:553]";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -5191,7 +5194,7 @@ connectAttr ":initialShadingGroup.mwc" "|group8|pasted__group|pasted__pasted__pC
 		;
 connectAttr "groupId10.id" "|group8|pasted__group|pasted__pasted__pCube1|transform1|pasted__pasted__pCubeShape1.ciog.cog[0].cgid"
 		;
-connectAttr "polySplit10.out" "group6_pasted__group_pasted__pasted__pCube1Shape.i"
+connectAttr "deleteComponent19.og" "group6_pasted__group_pasted__pasted__pCube1Shape.i"
 		;
 connectAttr "groupId11.id" "group6_pasted__group_pasted__pasted__pCube1Shape.iog.og[0].gid"
 		;
@@ -5678,6 +5681,7 @@ connectAttr "deleteComponent17.og" "deleteComponent18.ig";
 connectAttr "polyBridgeEdge4.out" "polyTweak18.ip";
 connectAttr "polyTweak18.out" "polySplit9.ip";
 connectAttr "polySplit9.out" "polySplit10.ip";
+connectAttr "polySplit10.out" "deleteComponent19.ig";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "|group5|pasted__group|pasted__pasted__pCube1|pasted__pasted__pCubeShape1.iog" ":initialShadingGroup.dsm"
 		 -na;
