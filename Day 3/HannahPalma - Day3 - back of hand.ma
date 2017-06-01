@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma - Day3 - back of hand.ma
-//Last modified: Wed, May 31, 2017 09:03:24 PM
+//Last modified: Wed, May 31, 2017 09:04:10 PM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "72937497-7F46-88B4-0674-2D981002AC74";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.5702676878391824 -21.100458272387506 -9.6804966917235262 ;
-	setAttr ".r" -type "double3" 1548.2616473383043 7927.7999999945014 -8.0256412164074353e-16 ;
+	setAttr ".t" -type "double3" 4.0491079930953049 -20.784715819327122 -11.37856488287383 ;
+	setAttr ".r" -type "double3" 1544.0616473383016 7942.1999999942873 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "341DDA4C-5A49-FC11-1EDA-B2896DD411E6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 22.362358207913172;
+	setAttr ".coi" 22.555970494656037;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
