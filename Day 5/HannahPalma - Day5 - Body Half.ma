@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma - Day5 - Body Half.ma
-//Last modified: Wed, Jun 14, 2017 08:58:14 PM
+//Last modified: Wed, Jun 14, 2017 10:23:01 PM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "64DCA14A-EF4D-C52F-C68A-708F791E880B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.324011531902606 17.518924680638683 26.051518512370642 ;
-	setAttr ".r" -type "double3" -21.338352729557574 -341.80000000014292 4.1850634925999851e-16 ;
+	setAttr ".t" -type "double3" 17.230485843351332 -9.867499980006734 23.545622717804619 ;
+	setAttr ".r" -type "double3" 33.861647270442035 -344.60000000014037 8.2475102243331518e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "157415A1-2C44-FA5B-53B0-45966D61C6FB";
 	setAttr -k off ".v" no;
