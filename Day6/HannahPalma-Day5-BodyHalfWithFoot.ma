@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma-Day5-BodyHalfWithFoot.ma
-//Last modified: Wed, Jun 28, 2017 09:00:13 PM
+//Last modified: Wed, Jun 28, 2017 09:01:11 PM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "64DCA14A-EF4D-C52F-C68A-708F791E880B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.6918485450781069 -0.60914681972722695 -49.83090292975092 ;
-	setAttr ".r" -type "double3" 1433.0616472004308 1249.7999999992983 0 ;
+	setAttr ".t" -type "double3" 9.0498983463129505 14.313292335604409 55.919462502010347 ;
+	setAttr ".r" -type "double3" 1417.4616472003813 1096.9999999992531 -8.314699528624374e-16 ;
 	setAttr ".rp" -type "double3" 0 -8.8817841970012523e-16 0 ;
 	setAttr ".rpt" -type "double3" -2.1701983721621808e-17 4.2225997502258938e-17 2.697302884385091e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -16430,6 +16430,7 @@ createNode mesh -n "week_10:bodyShape" -p "week_10:body";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder7";
 	rename -uid "DE2C57D6-D448-41DA-DF72-89B65C280EC4";
+	setAttr ".t" -type "double3" 0 -1.0037971584915439 0 ;
 	setAttr ".rp" -type "double3" 1.7507288455963135 -9.0951557485515693 1.3546487603509618 ;
 	setAttr ".sp" -type "double3" 1.7507288455963135 -9.0951557485515693 1.3546487603509618 ;
 createNode mesh -n "pCylinder7Shape" -p "pCylinder7";
@@ -16522,7 +16523,7 @@ createNode mesh -n "week_11:bodyShape" -p "week_11:body";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.53281749784946442 ;
+	setAttr ".pv" -type "double2" 0.5 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 6180 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.5625 0.484092 0.5625 0.398296
