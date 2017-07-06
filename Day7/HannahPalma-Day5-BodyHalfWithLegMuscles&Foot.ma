@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma-Day5-BodyHalfWithLegMuscles&Foot.ma
-//Last modified: Sun, Jul 02, 2017 09:56:29 PM
+//Last modified: Wed, Jul 05, 2017 09:03:32 AM
 //Codeset: UTF-8
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "64DCA14A-EF4D-C52F-C68A-708F791E880B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.737806522113452 12.622536694246001 42.826459480873837 ;
-	setAttr ".r" -type "double3" 1421.6616469860501 1090.2000000038156 -2.0197678793143337e-16 ;
+	setAttr ".t" -type "double3" -3.1938682386843249 13.921637942663576 43.027901539154328 ;
+	setAttr ".r" -type "double3" 1419.8616469860208 1080.6000000037991 2.2364501363855654e-16 ;
 	setAttr ".rp" -type "double3" 0 -8.8817841970012523e-16 0 ;
 	setAttr ".rpt" -type "double3" -2.1701983721621808e-17 4.2225997502258938e-17 2.697302884385091e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
