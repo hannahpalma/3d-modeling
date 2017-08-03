@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: HannahPalma_outofclass_final.ma
-//Last modified: Wed, Aug 02, 2017 08:53:47 PM
+//Last modified: Wed, Aug 02, 2017 08:55:58 PM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "00DE9E80-574A-7704-40BD-62BB0A6C9A65";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 20.686062611177686 28.833224146494896 51.078379347934273 ;
-	setAttr ".r" -type "double3" -25.538352782996963 2532.5999999811615 0 ;
+	setAttr ".t" -type "double3" 39.506521480967727 25.202210365657763 63.874610222079838 ;
+	setAttr ".r" -type "double3" -14.738352782964737 2909.3999999805023 -4.5633956903818984e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CCAB3060-E943-4575-69B4-8B8323EB94CB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 57.677490548222472;
+	setAttr ".coi" 75.552912590596335;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2649,13 +2649,13 @@ createNode mesh -n "polySurfaceShape3" -p "polySurface1";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.054485129192471504 0.31009632349014282 ;
+	setAttr ".pv" -type "double2" 1 0.62403100728988647 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 19 ".pt";
+	setAttr -s 20 ".pt";
 	setAttr ".pt[24]" -type "float3" -0.25879863 -0.020060223 0.32995304 ;
 	setAttr ".pt[25]" -type "float3" -0.09266144 0.024954392 0.40857476 ;
 	setAttr ".pt[26]" -type "float3" 0.053070057 0.055594899 0.40013933 ;
@@ -2668,6 +2668,7 @@ createNode mesh -n "polySurfaceShape3" -p "polySurface1";
 	setAttr ".pt[33]" -type "float3" -0.29371852 -0.11587226 -0.28234348 ;
 	setAttr ".pt[34]" -type "float3" -0.39242673 -0.11365278 -0.12923948 ;
 	setAttr ".pt[35]" -type "float3" -0.38558584 -0.076566018 0.11722686 ;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "transform20" -p "pCylinder5";
 	rename -uid "2802D4F4-8941-C96B-30A1-459D1EC77CA3";
@@ -2786,8 +2787,7 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 3;
-	setAttr ".dsm" 2;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode mesh -n "polySurfaceShape1" -p "pCube2";
 	rename -uid "B8FC3F39-0449-EC38-1C65-638BF45EDB7A";
@@ -8717,7 +8717,7 @@ createNode transform -n "pasted__pasted__pCube21" -p "|group35|pasted__group34";
 	rename -uid "140DA71E-694E-9341-9A55-67BFA4AEC933";
 	setAttr ".t" -type "double3" 2.3837169576773816 -1.6099235526266762 0.12701490638456289 ;
 	setAttr ".r" -type "double3" 5.6367957731662566 -14.605704705695839 -39.615817737187704 ;
-	setAttr ".s" -type "double3" 2.225660411484371 2.2835376276526818 1.9644968755436722 ;
+	setAttr ".s" -type "double3" 2.225660411484371 2.2835376276526818 2.0951155192082687 ;
 createNode mesh -n "pasted__pasted__pCubeShape21" -p "|group35|pasted__group34|pasted__pasted__pCube21";
 	rename -uid "2826B52F-9D40-B19B-B026-57B57244D07B";
 	setAttr -k off ".v";
